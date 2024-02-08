@@ -35,6 +35,8 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="velemenyek.html">Vélemény<a>
+            </li>
+            </li>
                 <a class="nav-link" href="velemeny.html">Mondd el!</a>
             </li>
         </ul>
@@ -51,15 +53,26 @@
                 <label for="kep">Póló képe:</label>
                 <input type="file" name="kep" id="kep" ><br><br>
                 <label for="meret">Mérete: </label>
-                <select id="meretvalasztas" style=" border:1px solid white; border-radius: 10px;  width: 150px; height: 30px;" >
-                    <option value="S">S</option>
-                    <option value="M">M</option>
-                    <option value="L">L</option>
-                    <option value="XL">XL</option>
-                    <option value="XXL">XXL</option>
-                </select><br><br>
+                <div class="mb-3 mt-3">
+                    <label for="Meret">Méret:</label>
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="remember"> S
+                    </label>
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="remember"> M
+                    </label>
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="remember"> L
+                    </label>
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="remember"> XL
+                    </label>
+                    <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="remember"> XXL
+                    </label>
+                </div>
                 <label for="ar">Ára:</label>
-                <input type="number" style="background-color: rgba(0, 0, 0, 0.068); border:1px solid white; border-radius: 10px;  width: 150px; height: 30px;"><br><br>
+                <input type="number" min="0" style="background-color: rgba(0, 0, 0, 0.068); border:1px solid white; border-radius: 10px;  width: 150px; height: 30px;"><br><br>
                 <input type="submit" class="gomb" style="background-color: rgba(0, 0, 0, 0.068); border:1px solid white; border-radius: 10px;  width: 150px; height: 30px;" value="Küldés">
             </form>
         </div>
